@@ -7,7 +7,7 @@
   "repository": "https://github.com/issc29/prevent-public-repos.git",
   "scripts": {
     "start": "probot run ./index.js",
-    "test": "jest && standard"
+    "test": "snyk test && jest && standard"
   },
   "dependencies": {
     "probot": "^3.0.0"
@@ -15,7 +15,8 @@
   "devDependencies": {
     "jest": "^21.2.1",
     "localtunnel": "^1.8.2",
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "snyk": "^1.91.0"
   },
   "engines": {
     "node": "^8.6.0",
